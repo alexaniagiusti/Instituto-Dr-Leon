@@ -1,26 +1,21 @@
 <template>
   <span>
     <SiteLayout>
-      <Menu/>
       <Header/>
-      <Causas/>
-      <Footer/>
+      <Sobre/>
     </SiteLayout>
   </span>
 </template>
 
 <script>
 import SiteLayout from '../Layouts/SiteLayout'
-import Menu from '../components/Menu'
 import Header from '../components/Header'
-import Causas from '../components/Causas'
-import Footer from '../components/Footer'
+import Sobre from '../components/Sobre'
 export default {
   components: {
     SiteLayout,
-    Menu,
-    Causas,
-    Footer
+    Header,
+    Sobre
   },
   data () {
     return {

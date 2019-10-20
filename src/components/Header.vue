@@ -1,28 +1,39 @@
 <template>
-      <div style="background: linear-gradient(to right, #000000, #e74c3c);" class="container-fluid bgimage-property header-section-space header_common" id="home">
-          <div class="container">
-              <v-row>
-                <v-col cols="12" xs="12" md="6">
-                   <p style="font-size:15pt" class="text-center white--text">Olá, eu sou o Leon, o Advogato dos animais!</p>
-                    <p class="text-principal" style="text-align:justify;" >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat tellus ut nunc finibus, ut tristique sapien auctor. Ut consequat elit ipsum. Suspendisse porttitor dui nisl, sed elementum diam lacinia sit amet. Vestibulum nec massa ultricies, maximus neque non, fringilla libero. Proin id tincidunt nunc. Pellentesque lacus erat, molestie quis nisi non, ultricies cursus erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus lacus est, porttitor vel tristique in, aliquam et tellus.
-
-In hac habitasse platea dictumst. Duis vestibulum risus diam, id feugiat lectus tincidunt sit amet. Vestibulum sed orci non velit tincidunt hendrerit at at risus. Phasellus mi libero, rutrum ac placerat vel, porta ac nisi. Vivamus et euismod est. Nulla hendrerit tellus a elementum ornare. Nam quis consectetur purus. Nunc vitae tincidunt mi. Nulla sed tempus.
-                    </p>
-                </v-col>
-                <v-col cols="12" xs="12" md="6">
-                  <img src="../../public/images/leon_pic2.png" alt="" width="500" height="300">
-                </v-col>
-              </v-row>
-          </div>
-      </div>
+  <div class="intro-area intro-home">
+    <div class="bg-wrapper">
+        <img src="img/background/bg.jpg" alt="">
+    </div>
+			<div class="intro-content">
+				<div class="slider-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<!-- layer 1 -->
+								<div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
+									<h2 class="title2">Olá, eu sou o Leon!</h2>
+								</div>
+								<!-- layer 2 -->
+								<div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
+									<p>O Advogato adotado pela OAB/AP, como diretor executivo do instituto Dr. Leon, convido você a conhecer a nossa causa e se tornar oficialmente um amigo dos animais.</p>
+								</div>
+								<!-- layer 3 -->
+								<div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
+									<a href="#" style="color:white;" class="ready-btn left-btn" >Saiba mais sobre a nossa missão</a>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 hidden-xs">
+								<div class="slide-images-inner wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="slide-top-image item-bounce">
+                      <!--<img src="img/slider/sp1.png" alt="">-->
+                  </div>
+                  <div class="slide-images">
+                      <img src="img/slider/s1.png" alt="">
+                  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+  </div>
 </template>
-
-
-<style scoped>
-
-.text-principal {
-  color: aliceblue;
-}
-
-</style>
