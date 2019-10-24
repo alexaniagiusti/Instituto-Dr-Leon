@@ -51,7 +51,7 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 html, body {
-	height: 100%;
+	width: 100%;
 }
 .floatleft {
 	float:left;
@@ -526,7 +526,7 @@ div#preloader {
 .intro-home .slide-images {
     float: right;
     position: relative;
-    top: -80px;
+    top: -50px;
 }
 .slider-content {
     position: relative;
@@ -621,12 +621,11 @@ div#preloader {
 	margin-top:-30px;
 }
 .services-img {
-    text-align: left;
+    text-align: center;
     padding-bottom: 30px;
     position: relative;
 }
 .services-img::after {
-    background: url(img/about/shape1.png);
     background-repeat: no-repeat;
     position: absolute;
     content: "";
@@ -638,6 +637,7 @@ div#preloader {
     margin: auto;
     margin-top: -80px;
     opacity: 0.3;
+    
 }
 .well-services {
     z-index: 1;
@@ -649,7 +649,7 @@ div#preloader {
     margin-top: 30px;
     position: relative;
     text-align: left;
-       border: 1px solid #d6f2fb;
+    border: 1px solid #d6f2fb;
 }
 .well-services::before{
     position: absolute;

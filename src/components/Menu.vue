@@ -10,11 +10,11 @@
                         <div class="col-md-3 col-sm-3">
                             <div class="logo">
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll black-logo" href="index-2.html">
+                                <a class="navbar-brand page-scroll black-logo" href="#">
                                     <img src="img/logo/logo2.png">
                                 </a>
-                                <a class="navbar-brand page-scroll white-logo" href="index-2.html">
-                                    <img src="img/logo/logo.png" alt="">
+                                <a class="navbar-brand page-scroll white-logo" href="#">
+                                    <img src="img/logo/logo2.png" alt="">
                                 </a>
                             </div>
                             <!-- logo end -->
@@ -22,14 +22,14 @@
                         <div class="col-md-9 col-sm-9">
                             <div class="header-right-link">
                                 <!-- search option end -->
-                        <a class="s-menu" href="login.html">Login</a>
+                        <a  style="color:white" class="s-menu" href="#">Login</a>
                             </div>
                             <!-- mainmenu start -->
                             <nav class="navbar navbar-default">
                                 <div class="collapse navbar-collapse" id="navbar-example">
                                     <div class="main-menu">
                                         <ul class="nav navbar-nav navbar-right">
-                                            <li><a class="pagess" href="index-2.html">Início</a></li>
+                                            <li><a class="pagess" href="#">Início</a></li>
                                             <li><a href="#">Sobre</a></li>
                                             <li><a href="#">Parceiros</a></li>
                                             <li><a class="pagess" href="#">Contato</a></li>

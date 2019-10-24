@@ -1,57 +1,89 @@
 <template>
-<span>
-<!-- Start Brand Area -->
-        <div class="about-area  fix area-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-content">
-                            <div class="about-images wow fadeInLeft" data-wow-delay="0.7s">
-                                <div class="rotmate-image rotateme">
-                                    <img src="img/about/circle.png" alt="">
-                                </div>
-                                <img src="img/about/ab.png" alt="">
-                                <div class="video-content">
-                                    <a href="https://www.youtube.com/watch?v=O33uuBh6nXA" class="video-play vid-zone">
-                                        <i class="fa fa-play"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="support-all">
-                            <!-- Start services -->
-                            <div class="support-services wow fadeInUp" data-wow-delay="0.3s">
-                               <a class="support-images" href="#">01</a>
-                                <div class="support-content">
-                                    <h4><a href="#">Professional Services</a></h4>
-                                    <p>Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define.</p>
-                                </div>
-                            </div>
-                            <!-- Start services -->
-                            <div class="support-services wow fadeInUp" data-wow-delay="0.5s">
-                                <a class="support-images" href="#">02</a>
-                                <div class="support-content">
-                                    <h4><a href="#">Safe & Security</a></h4>
-                                    <p>Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define.</p>
-                                </div>
-                            </div>
-                            <!-- Start services -->
-                            <div class="support-services hidden-sm wow fadeInUp" data-wow-delay="0.7s">
-                                <a class="support-images" href="#">03</a>
-                                <div class="support-content">
-                                    <h4><a href="#">Live Support</a></h4>
-                                    <p>Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Start services -->
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-       <!-- End Banner Area -->
-</span>
+		<div id="background-sobre">
+		<!-- Welcome service area start -->
+					<div class="welcome-area area-padding">
+						<v-container fluid>
+							<v-row justify="center">
+								<v-col cols="12" md="10" xs="12">
+									<p class="text-justify text-center title black--text pt-5">Nossa missão é ajudar as ONGs que protegem animais abandonados e maltratados por todo o país, começando pela minha cidade Macapá! Mas pra isso precisamos da sua ajuda, nossa primeira aventura será a arrecadação de fundos, para que as nossas Ongs parceiras possam quitar suas dívidas em clínicas veterinárias. Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa. </p>
+
+								</v-col>
+							</v-row>
+						</v-container>
+							<div class="container">
+								<div class="row">
+									<div class="all-services">
+							<!-- single-well end-->
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="well-services wow fadeInUp" data-wow-delay="0.3s">
+									<div class="services-img">
+										<img src="img/services/w1.png" alt="">
+									</div>
+									<div class="main-wel">
+										<div class="wel-content">
+											<h4>Gateiros Tucujus</h4>
+											<p>Fundada em agosto de 2016, a GATU realiza principalmente resgates de animais feridos ou em condições de risco. Com o foco na preservação ambiental.</p>
+												<v-btn color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-well end-->
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="well-services wow fadeInUp" data-wow-delay="0.5s">
+									<div class="services-img">
+										<img src="img/services/w2.png" alt="">
+									</div>
+									<div class="main-wel">
+										<div class="wel-content">
+											<h4>Salvação</h4>
+											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
+												<v-btn color="blue" block> <span class="black--text">Saiba Mais</span> </v-btn>											
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-well end-->
+							<!-- single-well end-->
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="well-services wow fadeInUp" data-wow-delay="0.5s">
+									<div class="services-img">
+										<img src="img/services/w3.png" alt="">
+									</div>
+									<div class="main-wel">
+										<div class="wel-content">
+											<h4>Vira-Latas</h4>
+											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
+												<v-btn color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>										
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="well-services wow fadeInUp" data-wow-delay="0.5s">
+									<div class="services-img">
+										<img src="img/services/w4.png" alt="">
+									</div>
+									<div class="main-wel">
+										<div class="wel-content">
+											<h4>Anjos Protetores</h4>
+											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
+												<v-btn color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- single-well end-->
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- Welcome service area End -->
+		</div>
 </template>
+
+<style scoped>
+	#background-sobre {
+	background-image: url('../../public/img/background/color-bg.png') 
+	}
+</style>

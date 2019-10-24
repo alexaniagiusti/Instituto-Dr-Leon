@@ -1,7 +1,7 @@
 <template>
   <div class="intro-area intro-home">
     <div class="bg-wrapper">
-        <img src="img/background/bg.jpg" alt="">
+        <img src="img/background/bg1.png" alt="">
     </div>
 			<div class="intro-content">
 				<div class="slider-content">
@@ -24,10 +24,9 @@
 							<div class="col-md-6 col-sm-6 hidden-xs">
 								<div class="slide-images-inner wow fadeInUp" data-wow-delay="0.5s">
                   <div class="slide-top-image item-bounce">
-                      <!--<img src="img/slider/sp1.png" alt="">-->
                   </div>
                   <div class="slide-images">
-                      <img src="img/slider/s1.png" alt="">
+                      <img src="img/slider/s1a.png" alt="">
                   </div>
 								</div>
 							</div>

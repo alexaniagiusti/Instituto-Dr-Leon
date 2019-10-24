@@ -1,21 +1,22 @@
 <template>
-  <span>
-    <SiteLayout>
-      <Header/>
-      <Sobre/>
-    </SiteLayout>
-  </span>
+  <SiteLayout>
+    <Header/>
+    <Sobre/>
+    <Footer/>
+  </SiteLayout>
 </template>
 
 <script>
-import SiteLayout from '../Layouts/SiteLayout'
 import Header from '../components/Header'
 import Sobre from '../components/Sobre'
+import Footer from '../components/Footer'
+import SiteLayout from '../Layouts/SiteLayout'
 export default {
   components: {
     SiteLayout,
     Header,
-    Sobre
+    Sobre,
+    Footer
   },
   data () {
     return {
@@ -24,3 +25,5 @@ export default {
   }
 };
 </script>
+
+<style>
