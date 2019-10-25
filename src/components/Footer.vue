@@ -6,6 +6,7 @@
                     <div class="footer-head">
                         <div class="footer-icons">
                             <ul>
+                            <p class="white--text font-weight-bold">Siga-nos nas Redes !</p>
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-facebook"></i>

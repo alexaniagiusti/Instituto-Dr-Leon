@@ -568,7 +568,7 @@ div#preloader {
 }
 .ready-btn {
     border: 1px solid #760EEC;
-     background: #760EEC;
+    background: #1a1364;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -577,7 +577,6 @@ div#preloader {
     margin-top: 20px;
     padding: 10px 30px;
     text-align: center;
-    text-transform: capitalize;
     transition: all 0.4s ease 0s;
     border-radius: 50px;
 }

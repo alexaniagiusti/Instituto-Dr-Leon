@@ -50,36 +50,7 @@
                 </div>
             </div>
             <!-- header-area end -->
-            <!-- mobile-menu-area start -->
-            <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mobile-menu">
-                                <div class="logo">
-                                    <a href="#"><img src="img/logo/logo2.png" alt="" /></a>
-                                </div>
-                                <nav id="dropdown">
-                                    <ul>
-                                        <li><a class="#" href="#">Início</a></li>
-                                        <li><a href="#">Sobre</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a class="#" href="#">Parceiros</a></li>
-                                        <li><a class="pagess" href="#">Contato</a></li>
-                                        <li><a href="#">Galeria</a>
-                                        <ul class="sub-menu">
-                                                <li><a href="#">Blog grid</a></li>
-                                                <li><a href="#">Blog Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>					
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- mobile-menu-area end -->		
-        </header>
+        </header>		
+    <!-- header end -->
 </div>
 </template>

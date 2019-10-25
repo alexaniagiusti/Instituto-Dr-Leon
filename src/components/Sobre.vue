@@ -5,9 +5,30 @@
 						<v-container fluid>
 							<v-row justify="center">
 								<v-col cols="12" md="10" xs="12">
-									<p class="text-justify text-center title black--text pt-5">Nossa missão é ajudar as ONGs que protegem animais abandonados e maltratados por todo o país, começando pela minha cidade Macapá! Mas pra isso precisamos da sua ajuda, nossa primeira aventura será a arrecadação de fundos, para que as nossas Ongs parceiras possam quitar suas dívidas em clínicas veterinárias. Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa. </p>
-
+									<v-tooltip top>
+										<template v-slot:activator="{ on }">
+											<v-row>
+												<v-col cols="12" xs="12">
+													<v-btn @click="dialog = true" v-on="on" rounded color="#1a1364" block> 
+														<span class="text-lowercase font-weight-bold white--text">Seja amigo dos animais e receba um presente do Dr. Leon</span>
+													</v-btn>
+												</v-col>
+											</v-row>
+										</template>
+										<span class="font-weight-bold subtitle-2 white--text">Clique aqui e saiba qual o presente que o Dr. Leon tem pra você!</span>
+									</v-tooltip>
+									<p class="text-justify text-center title black--text pt-5">Nossa missão é ajudar as ONGs que protegem animais abandonados e maltratados por todo o país, começando pela minha cidade Macapá! Mas pra isso precisamos da sua ajuda, nossa primeira aventura será a arrecadação de fundos, para que as nossas Ongs parceiras possam quitar suas dívidas em clínicas veterinárias.</p>
+									<p class="title text-center black--text">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
 								</v-col>
+								<v-dialog v-model="dialog" persistent max-width="410">
+								<v-card>
+									<v-img src="img/about/certificado.jpg"></v-img>
+									<v-card-actions>
+										<v-btn small block color="#1a1364" class="white--text darken-1" flat="flat" @click.native="dialog = false">Fechar</v-btn>
+
+									</v-card-actions>
+								</v-card>
+							</v-dialog>
 							</v-row>
 						</v-container>
 							<div class="container">
@@ -82,8 +103,19 @@
 		</div>
 </template>
 
+<script>
+export default {
+	data () {
+		return {
+			dialog: false
+		}
+	}
+}
+</script>>
+
 <style scoped>
 	#background-sobre {
-	background-image: url('../../public/img/background/color-bg.png') 
+	background-color: #eae9fb;
+	/* background-image: url('../../public/img/background/color-bg.png') */
 	}
 </style>

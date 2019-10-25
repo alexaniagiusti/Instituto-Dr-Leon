@@ -8,6 +8,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
+								
 								<!-- layer 1 -->
 								<div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
 									<h2 class="title2">Olá, eu sou o Leon!</h2>
@@ -26,6 +27,9 @@
                   <div class="slide-top-image item-bounce">
                   </div>
                   <div class="slide-images">
+											<div class="hidden-sm-and-up" id="leon-mobile">
+                      	<img src="img/slider/s1a.png" alt="">	
+											</div>
                       <img src="img/slider/s1a.png" alt="">
                   </div>
 								</div>
