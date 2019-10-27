@@ -9,6 +9,13 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								
+								<div class="ajustar-meio hidden-sm-and-up layer-1 wow fadeInUp" data-wow-delay="0.3s">
+									
+									<v-spacer></v-spacer>
+									<img width="70" src="img/slider/s1a.png" alt="">	
+									<v-spacer></v-spacer>
+
+								</div>
 								<!-- layer 1 -->
 								<div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
 									<h2 class="title2">Olá, eu sou o Leon!</h2>
@@ -40,3 +47,10 @@
 			</div>
   </div>
 </template>
+
+<style>
+	.ajustar-meio {
+		display: flex; 
+		margin-bottom: 10px;
+	}
+</style>

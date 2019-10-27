@@ -44,7 +44,7 @@
 										<div class="wel-content">
 											<h4>Gateiros Tucujus</h4>
 											<p>Fundada em agosto de 2016, a GATU realiza principalmente resgates de animais feridos ou em condições de risco. Com o foco na preservação ambiental.</p>
-												<v-btn color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>
+												<v-btn @click="$router.push('/ong/gateiros-tucujus')" color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>
 										</div>
 									</div>
 								</div>
@@ -59,7 +59,7 @@
 										<div class="wel-content">
 											<h4>Salvação</h4>
 											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-												<v-btn color="blue" block> <span class="black--text">Saiba Mais</span> </v-btn>											
+												<v-btn @click="$router.push('/ong/salvacao')" color="blue" block> <span class="black--text">Saiba Mais</span> </v-btn>											
 										</div>
 									</div>
 								</div>
@@ -75,7 +75,7 @@
 										<div class="wel-content">
 											<h4>Vira-Latas</h4>
 											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-												<v-btn color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>										
+												<v-btn @click="$router.push('/ong/vira-latas')" color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>										
 										</div>
 									</div>
 								</div>
@@ -89,7 +89,7 @@
 										<div class="wel-content">
 											<h4>Anjos Protetores</h4>
 											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-												<v-btn color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>
+												<v-btn @click="$router.push('/ong/anjos-protetores')" color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>
 										</div>
 									</div>
 								</div>
