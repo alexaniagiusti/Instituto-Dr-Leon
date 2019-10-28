@@ -1,24 +1,29 @@
 <template>
 		<div id="background-sobre">
 		<!-- Welcome service area start -->
-					<div class="welcome-area area-padding">
+					<div class="welcome-area">
 						<v-container fluid>
 							<v-row justify="center">
 								<v-col cols="12" md="10" xs="12">
-									<v-tooltip top>
-										<template v-slot:activator="{ on }">
-											<v-row>
-												<v-col cols="12" xs="12">
-													<v-btn @click="dialog = true" v-on="on" rounded color="#1a1364" block> 
-														<span class="text-lowercase font-weight-bold white--text">Seja amigo dos animais e receba um presente do Dr. Leon</span>
-													</v-btn>
-												</v-col>
-											</v-row>
-										</template>
-										<span class="font-weight-bold subtitle-2 white--text">Clique aqui e saiba qual o presente que o Dr. Leon tem pra você!</span>
-									</v-tooltip>
-									<p class="text-justify text-center title black--text pt-5">Nossa missão é ajudar as ONGs que protegem animais abandonados e maltratados por todo o país, começando pela minha cidade Macapá! Mas pra isso precisamos da sua ajuda, nossa primeira aventura será a arrecadação de fundos, para que as nossas Ongs parceiras possam quitar suas dívidas em clínicas veterinárias.</p>
-									<p class="title text-center black--text">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
+									<div class="mt-3 layer-2 wow fadeInUp" data-wow-delay="0.5s">
+										<v-tooltip top>
+											<template v-slot:activator="{ on }">
+												<h3 style="cursor: pointer; color: #333" @click="dialog = true" v-on="on" class="title2 hidden-sm-and-down">Seja amigo dos animais e receba um presente do Dr. Leon</h3>
+												<h5 style="cursor: pointer; color: #333" @click="dialog = true" v-on="on" class="title2 text-center hidden-lg-and-up">Seja amigo dos animais e receba um presente do Dr. Leon</h5>
+											</template>
+											<span class="font-weight-bold subtitle-2 white--text">Clique aqui e saiba qual o presente que o Dr. Leon tem pra você!</span>
+										</v-tooltip>
+									</div>
+
+									<div class="pt-5 mb-5 layer-2 wow fadeInUp" data-wow-delay="0.5s">
+										<p class="text-justify" >Nossa missão é ajudar as ONGs que protegem animais abandonados e maltratados por todo o país, começando pela minha cidade Macapá! Mas pra isso precisamos da sua ajuda, nossa primeira aventura será a arrecadação de fundos, para que as nossas Ongs parceiras possam quitar suas dívidas em clínicas veterinárias.</p>
+									</div>
+									
+									<div class="pt-5 mb-5 layer-2 wow fadeInUp" data-wow-delay="0.5s">
+										<h4 class="title2 hidden-sm-and-down" style="color: #333">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</h4>
+										<h6 class="title2 hidden-lg-and-up text-center" style="color: #333">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</h6>
+									</div>
+									
 								</v-col>
 								<v-dialog v-model="dialog" persistent max-width="410">
 								<v-card>
@@ -59,12 +64,11 @@
 										<div class="wel-content">
 											<h4>Salvação</h4>
 											<p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-												<v-btn @click="$router.push('/ong/salvacao')" color="blue" block> <span class="black--text">Saiba Mais</span> </v-btn>											
+												<v-btn @click="$router.push('/ong/salvacao')" color="blue" block> <span class="white--text">Saiba Mais</span> </v-btn>											
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- single-well end-->
 							<!-- single-well end-->
 							<div class="col-md-3 col-sm-6 col-xs-12">
 								<div class="well-services wow fadeInUp" data-wow-delay="0.5s">

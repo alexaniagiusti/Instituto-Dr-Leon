@@ -1,9 +1,9 @@
 <template>
-  <div class="intro-area intro-home">
+  <div class="centraliza intro-home">
     <div class="bg-wrapper">
         <img src="img/background/bg1.png" alt="">
     </div>
-			<div class="intro-content">
+			<div style="justify-content: center; align-items: center" class="intro-content">
 				<div class="slider-content">
 					<div class="container">
 						<div class="row">
@@ -51,6 +51,13 @@
 <style>
 	.ajustar-meio {
 		display: flex; 
-		margin-bottom: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.centraliza {
+		display: flex; 
+		justify-content: center;
+		align-items: center;
 	}
 </style>
