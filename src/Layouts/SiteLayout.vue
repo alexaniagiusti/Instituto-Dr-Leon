@@ -14,11 +14,6 @@ export default {
   components: {
     Menu,
     Footer,
-  },
-  data () {
-    return {
-
-    }
   }
 }
 </script>

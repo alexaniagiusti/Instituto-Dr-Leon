@@ -30,15 +30,7 @@
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a class="pagess" @click="goToHome()">Início</a></li>
                                             <li><a href="#">Sobre</a></li>
-                                            <li><a href="#">Parceiros</a></li>
-                                            <li><a class="pagess" href="#">Contato</a></li>
-                                            <li><a class="pagess" href="#">Galeria</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="#">Blog grid</a></li>
-                                                    <li><a href="#">Blog Sidebar</a></li>
-                                                    <li><a href="#">Blog Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a class="pagess" href="#">Galeria</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -64,3 +56,20 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+  .main-menu ul.navbar-nav li a {
+      color: rgb(45, 48, 45);
+      font-size: 15px;
+      font-weight: 500;
+      padding: 40px 15px;
+      text-transform: capitalize;
+      position: relative;
+  }
+  .main-menu ul.navbar-nav li.active a {
+    background: rgba(15, 235, 15, 0) none repeat scroll 0 0;
+    color: rgb(14, 236, 32);
+    position: relative;
+    z-index: 9999999;
+}
+</style>
