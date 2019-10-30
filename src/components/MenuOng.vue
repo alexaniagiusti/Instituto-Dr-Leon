@@ -59,7 +59,7 @@ export default {
 
 <style scoped>
   .main-menu ul.navbar-nav li a {
-      color: rgb(45, 48, 45);
+      color: #fff;
       font-size: 15px;
       font-weight: 500;
       padding: 40px 15px;
@@ -71,5 +71,9 @@ export default {
     color: rgb(14, 236, 32);
     position: relative;
     z-index: 9999999;
+}
+
+.header-area{
+	background-image: url(../../public/img/background/bg2.png);
 }
 </style>
