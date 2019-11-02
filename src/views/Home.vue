@@ -3,6 +3,7 @@
     <v-app-bar
       style="z-index: 5"
       absolute
+      elevate-on-scroll
       class="hidden-sm-and-up"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" ></v-app-bar-nav-icon>
@@ -15,10 +16,6 @@
       <v-list class="pa-0 ma-0" dense nav>
         <v-list-item @click="" >
           Login
-        </v-list-item>
-
-        <v-list-item @click="">
-          Início
         </v-list-item>
 
         <v-list-item @click="">

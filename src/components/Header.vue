@@ -26,7 +26,7 @@
 								</div>
 								<!-- layer 3 -->
 								<div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
-									<a href="#" style="color:white;" class="ready-btn left-btn" >Saiba mais sobre a nossa missão</a>
+									<a @click="scrollar(780)" style="color:white;" class="ready-btn left-btn" >Saiba mais sobre a nossa missão</a>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 hidden-xs">
@@ -47,6 +47,24 @@
 			</div>
   </div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+
+		}
+	},
+	methods: {
+		scrollar(to) {
+			window.scrollTo({
+				top: to,
+				behavior: 'smooth'
+			})
+		}
+	}
+}
+</script>
 
 <style>
 	.ajustar-meio {

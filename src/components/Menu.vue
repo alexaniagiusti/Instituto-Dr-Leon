@@ -28,17 +28,9 @@
                                 <div class="collapse navbar-collapse" id="navbar-example">
                                     <div class="main-menu">
                                         <ul class="nav navbar-nav navbar-right">
-                                            <li><a class="pagess" @click="goToHome()">Início</a></li>
-                                            <li><a href="#">Sobre</a></li>
-                                            <li><a href="#">Parceiros</a></li>
-                                            <li><a class="pagess" href="#">Contato</a></li>
-                                            <li><a class="pagess" href="#">Galeria</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="#">Blog grid</a></li>
-                                                    <li><a href="#">Blog Sidebar</a></li>
-                                                    <li><a href="#">Blog Details</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a class="pagess" @click="$router.push('/')">Início</a></li>
+                                            <li><a @click="scrollar(780)">Sobre</a></li>
+                                            <li><a @click="scrollar(980)">Parceiros</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -56,10 +48,20 @@
 
 <script>
 export default {
+    data() {
+        return {
+            x: 0
+        }
+    },
     methods: {
         goToHome() {
             this.$router.push('/')
-            location.reload()   
+        },
+        scrollar(to) {
+            window.scrollTo({
+                top: to,
+                behavior: 'smooth'
+            })
         }
     }
 }

@@ -7,6 +7,15 @@ import Gateiros from './components/ongs/GateirosTucujus.vue'
 import Salvacao from './components/ongs/Salvacao.vue'
 import ViraLatas from './components/ongs/ViraLata.vue'
 
+import Gerencia from './views/Gerencia'
+
+//rotas de criação e edição de ongs
+import FormOng from './components/gerencia/ongs/Form'
+import ListarOng from './components/gerencia/ongs/Listar'
+
+//rotas pagamentos
+import ListarPagamento from './components/gerencia/pagamentos/Listar.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -15,6 +24,30 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/gerencia',
+      name: 'gerencia',
+      component: Gerencia,
+      children: [
+        {
+          path: '/gerencia/ong-listar',
+          component: ListarOng
+        },
+        {
+          path: '/gerencia/ong-form',
+          component: FormOng
+        },
+        {
+          path: '/gerencia/ong-form/:id',
+          component: FormOng,
+          props: true
+        },
+        {
+          path: '/gerencia/pagamento-listar',
+          component: ListarPagamento
+        }
+      ]
     },
     {
       path: '/ong/anjos-protetores',

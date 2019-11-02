@@ -29,8 +29,7 @@
                                 <div class="main-menu">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a class="pagess" @click="goToHome()">Início</a></li>
-                                        <li><a href="#">Sobre</a></li>
-                                        <li><a class="pagess" href="#">Galeria</a></li>
+                                        <li><a class="pagess" @click="scrollar(680)">Galeria</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,7 +50,12 @@ export default {
     methods: {
         goToHome() {
             this.$router.push('/')
-            location.reload()   
+        },
+        scrollar(to) {
+            window.scrollTo({
+                top: to,
+                behavior: 'smooth'
+            })
         }
     }
 }

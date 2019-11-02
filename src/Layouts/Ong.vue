@@ -14,6 +14,17 @@ export default {
   components: {
     MenuOng,
     Footer
+  },
+  methods: {
+    scrollar() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  },
+  created() {
+    setTimeout(() => this.scrollar(), 340)
   }
 }
 </script>
