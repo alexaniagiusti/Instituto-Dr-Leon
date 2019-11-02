@@ -1,7 +1,7 @@
 <template>
 <div>
-        <header class="header-one">
-            <!-- header-area start -->
+    <header class="header-one">
+        <!-- header-area start -->
             <div id="sticker" class="header-area hidden-xs">
                 <div class="container">
                     <div class="row">
@@ -29,8 +29,8 @@
                                     <div class="main-menu">
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a class="pagess" @click="$router.push('/')">Início</a></li>
-                                            <li><a @click="scrollar(780)">Sobre</a></li>
-                                            <li><a @click="scrollar(980)">Parceiros</a></li>
+                                            <li><a @click="scrollar(780)">Parceiros</a></li>
+                                            <li><a @click="scrollar(980)">Missão</a></li>
                                         </ul>
                                     </div>
                                 </div>

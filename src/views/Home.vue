@@ -1,5 +1,6 @@
 <template>
   <SiteLayout>
+  <!-- Exibição do Menu mobole -->
     <v-app-bar
       style="z-index: 5"
       absolute
@@ -8,7 +9,7 @@
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" ></v-app-bar-nav-icon>
       <v-toolbar-title>
-        Dr. Leon
+       Instituto Dr. Leon
       </v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer absolute v-model="drawer" style="z-index: 6" >
@@ -19,7 +20,7 @@
         </v-list-item>
 
         <v-list-item @click="">
-          Sobre
+          Inicio
         </v-list-item>
 
         <v-list-item @click="">
@@ -27,29 +28,28 @@
         </v-list-item>
 
         <v-list-item @click=""> 
-          Contato
-        </v-list-item>
-
-        <v-list-item @click="">
-          Galeria
+          Missão
         </v-list-item>
       </v-list>
-
     </v-navigation-drawer>
+    <!-- Final da exibição do menu mobile -->
     <Header/>
     <Sobre/>
+    <Missao/>
   </SiteLayout>
 </template>
 
 <script>
 import Header from '../components/Header'
 import Sobre from '../components/Sobre'
+import Missao from '../components/Missao'
 import SiteLayout from '../Layouts/SiteLayout'
 export default {
   components: {
     SiteLayout,
     Header,
     Sobre,
+    Missao
   },
   data () {
     return {
@@ -58,5 +58,3 @@ export default {
   }
 };
 </script>
-
-<style>

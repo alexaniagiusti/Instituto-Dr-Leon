@@ -22,7 +22,7 @@
                 </v-col>
 
                 <v-col class="pa-5" cols="12" md="6" xs="12">
-                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/wxHs0WD8czA" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="430" src="https://www.youtube.com/embed/fiTA5AAVEis" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </v-col>
 
                 <v-col v-for="foto in fotos" :key="foto" cols="12" md="4" xs="12">
