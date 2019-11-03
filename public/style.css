@@ -1443,6 +1443,7 @@ span.dolar {
     background-position: center center;
     background-size: cover;
     z-index: 1;
+    bottom: 0;
     position: relative;
     overflow: hidden;
 }
@@ -1454,7 +1455,7 @@ span.dolar {
     position: absolute;
     content: "";
     left: 0;
-    top: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
