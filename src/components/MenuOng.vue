@@ -29,7 +29,16 @@
                                 <div class="main-menu">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a class="pagess" @click="goToHome()">Início</a></li>
-                                        <li><a class="pagess" @click="scrollar(680)">Galeria</a></li>
+                                        <li><a>Parceiros</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index-2.html">Gateiros Tucujus</a></li>
+                                                <li><a href="index-3.html">Salvação</a></li>
+                                                <li><a href="index-3.html">Vira-Latas</a></li>
+                                                <li><a href="index-3.html">Anjos Protetores</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="pagess" @click="goToHome()">Rodapé</a></li>
+                                        <li><a class="pagess" @click="goToHome()">Amigos do Instituto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -78,6 +87,6 @@ export default {
 }
 
 .header-area{
-	background-image: url(../../public/img/background/bg2.png);
+	background-image: url(../../public/img/background/bg1.png);
 }
 </style>
