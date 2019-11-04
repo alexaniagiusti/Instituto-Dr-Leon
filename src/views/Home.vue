@@ -34,15 +34,15 @@
     </v-navigation-drawer>
     <!-- Final da exibição do menu mobile -->
     <Header/>
-    <Sobre/>
     <Missao/>
+    <Sobre/>
   </SiteLayout>
 </template>
 
 <script>
 import Header from '../components/Header'
-import Sobre from '../components/Sobre'
 import Missao from '../components/Missao'
+import Sobre from '../components/Sobre'
 import SiteLayout from '../Layouts/SiteLayout'
 export default {
   components: {
