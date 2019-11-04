@@ -22,15 +22,15 @@
                 </v-col>
 
                 <v-col class="pa-5" cols="12" md="6" xs="12">
-                    <iframe width="100%" height="430" src="https://www.youtube.com/embed/fiTA5AAVEis" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <v-img src="https://static.wixstatic.com/media/78d3dc_cc7dfd1ebd184234ae51d7f05d501536~mv2.jpeg/v1/fill/w_395,h_282,al_c,q_80,usm_0.66_1.00_0.01/WhatsApp%20Image%202019-10-15%20at%2015_59_19_jp.webp" width="600"></v-img>
                 </v-col>
-
-                <v-col v-for="foto in fotos" :key="foto" cols="12" md="4" xs="12">
+                <!-- <v-col v-for="foto in fotos" :key="foto" cols="12" md="4" xs="12">
                     <v-card>
                     <v-img :src="foto"></v-img>
                     </v-card>
-                </v-col>
+                </v-col> -->
             </v-row>
+            
         </v-container>
     </Ong>
 </template>
