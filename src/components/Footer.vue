@@ -6,32 +6,17 @@
                     <div class="footer-head">
                         <div class="footer-icons">
                             <ul>
-                            <p class="white--text font-weight-bold">Siga-nos nas Redes !</p>
+                            <p class="white--text font-weight-bold">Siga o Dr.Leon nas Redes !</p>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/Instituto-Dr-Leon-O-Advogato-101056784633271/" target="_blanck">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-google"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-pinterest"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
+                                    <a href="https://www.instagram.com/dr_leon_advogato/" target="_blanck">
                                         <i class="fa fa-instagram"></i>
                                     </a>
-                                </li>
+                                </li>                                
                             </ul>
                         </div>
                     </div>
