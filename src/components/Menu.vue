@@ -29,8 +29,17 @@
                                     <div class="main-menu">
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a class="pagess" @click="$router.push('/')">Início</a></li>
-                                            <li><a @click="scrollar(780)">Parceiros</a></li>
-                                            <li><a @click="scrollar(980)">Missão</a></li>
+                                            <li><a @click="scrollar(850)">Missão</a></li>
+                                            <li><a @click="scrollar(1600)">Parceiros</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="index-2.html">Gateiros Tucujus</a></li>
+                                                    <li><a href="index-3.html">Salvação</a></li>
+                                                    <li><a href="index-3.html">Vira-Latas</a></li>
+                                                    <li><a href="index-3.html">Anjos Protetores</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a @click="scrollar(2000)">Rodapé</a></li>
+                                            <li><a>Amigos do Instituto</a></li>
                                         </ul>
                                     </div>
                                 </div>
