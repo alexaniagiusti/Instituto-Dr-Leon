@@ -3,25 +3,22 @@
     <header class="header-one">
         <!-- header-area start -->
         <div id="sticker" class="header-area hidden-xs">
-            <div class="container">
-                <div class="row">
+            <v-container>
+                <v-row>
                     <!-- logo start -->
-                    <div class="col-md-3 col-sm-3">
+                    <v-col cols="12" md="3" sm="3">
                         <div class="logo">
                             <!-- Brand -->
                             <a class="navbar-brand page-scroll black-logo" @click="goToHome">
                                 <img src="img/logo/logo2.png">
                             </a>
-                            <a class="navbar-brand page-scroll white-logo" href="#">
-                                <img src="img/logo/logo2.png" alt="">
-                            </a>
                         </div>
                         <!-- logo end -->
-                    </div>
-                    <div class="col-md-9 col-sm-9">
+                    </v-col>
+                    <v-col cols="12" md="9" sm="9">
                         <div class="header-right-link">
                             <!-- search option end -->
-                    <a  style="color:white" class="s-menu" href="#">Login</a>
+                            <a  style="color:white" class="s-menu" href="#">Login</a>
                         </div>
                         <!-- mainmenu start -->
                         <nav class="navbar navbar-default">
@@ -44,9 +41,9 @@
                             </div>
                         </nav>
                         <!-- mainmenu end -->
-                    </div>
-                </div>
-            </div>
+                    </v-col>
+                </v-row>
+            </v-container>
         </div>
         <!-- header-area end -->
     </header>		
