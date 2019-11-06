@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Login from './views/Login.vue'
 //import VisualizarOng from './components/ongs/visualizar.vue'
 import Anjos from './components/ongs/AnjosProtetores.vue'
 import Gateiros from './components/ongs/GateirosTucujus.vue'
@@ -24,6 +25,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     },
     {
       path: '/gerencia',
