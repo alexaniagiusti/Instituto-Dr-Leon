@@ -35,20 +35,20 @@
     <!-- Final da exibição do menu mobile -->
     <Header/>
     <Missao/>
-    <Sobre/>
+    <Parceiros/>
   </SiteLayout>
 </template>
 
 <script>
 import Header from '../components/Header'
 import Missao from '../components/Missao'
-import Sobre from '../components/Sobre'
+import Parceiros from '../components/Parceiros'
 import SiteLayout from '../Layouts/SiteLayout'
 export default {
   components: {
     SiteLayout,
     Header,
-    Sobre,
+    Parceiros,
     Missao
   },
   data () {
