@@ -22,11 +22,11 @@
 							</div>
 							<!-- layer 2 -->
 							<div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
-								<p>O Advogato adotado pela OAB/AP, como diretor executivo do instituto Dr. Leon, convido você a conhecer a nossa causa e se tornar oficialmente um amigo dos animais.</p>
+								<p class="black--text">O Advogato adotado pela OAB/AP, como diretor executivo do instituto Dr. Leon, convido você a conhecer a nossa causa e se tornar oficialmente um amigo dos animais.</p>
 							</div>
 							<!-- layer 3 -->
 							<div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
-								<a @click="scrollar(780)" style="color:white;" class="ready-btn left-btn" >Saiba mais sobre a nossa missão</a>
+								<a @click="scrollar(770)" style="color:white;" class="ready-btn left-btn" >Saiba mais sobre a nossa missão</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 hidden-xs">
