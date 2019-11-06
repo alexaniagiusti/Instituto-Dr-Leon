@@ -12,16 +12,13 @@
                                 <a class="navbar-brand page-scroll black-logo" @click="goToHome">
                                     <img src="img/logo/logo2.png">
                                 </a>
-                                <a class="navbar-brand page-scroll white-logo" href="#">
-                                    <img src="img/logo/logo2.png" alt="">
-                                </a>
                             </div>
                             <!-- logo end -->
                         </div>
                         <div class="col-md-9 col-sm-9">
                             <div class="header-right-link">
                                 <!-- search option end -->
-                        <a  style="color:white" class="s-menu" href="#">Login</a>
+                        <a  style="color:white" class="s-menu" @click="goToLogin">Login</a>
                             </div>
                             <!-- mainmenu start -->
                             <nav class="navbar navbar-default">
@@ -29,8 +26,8 @@
                                     <div class="main-menu">
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a class="pagess" @click="$router.push('/')">Início</a></li>
-                                            <li><a @click="scrollar(850)">Missão</a></li>
-                                            <li><a @click="scrollar(1600)">Parceiros</a>
+                                            <li><a @click="scrollar(770)">Missão</a></li>
+                                            <li><a @click="scrollar(1420)">Parceiros</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="index-2.html">Gateiros Tucujus</a></li>
                                                     <li><a href="index-3.html">Salvação</a></li>
@@ -38,7 +35,7 @@
                                                     <li><a href="index-3.html">Anjos Protetores</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a @click="scrollar(2000)">Rodapé</a></li>
+                                            <li><a @click="scrollar(2000)">Redes Sociais</a></li>
                                             <li><a>Amigos do Instituto</a></li>
                                         </ul>
                                     </div>
@@ -59,12 +56,15 @@
 export default {
     data() {
         return {
-            x: 0
+            x: 0,
         }
     },
     methods: {
         goToHome() {
             this.$router.push('/')
+        },
+        goToLogin () {
+            this.$router.push('/login')
         },
         scrollar(to) {
             window.scrollTo({
