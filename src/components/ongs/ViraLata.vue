@@ -16,8 +16,8 @@
                         :color="item.color"
                         dark
                     >
-                        <v-card-title class="title">{{item.title}}</v-card-title>
-                        <img :src="item.img" height="200" alt="">
+                      <v-card-title class="title pa-1">{{item.title}}</v-card-title>
+                      <p style="text-align:justify" class="sobreaong white--text pa-4">{{item.sobreaong}}</p>
                     </v-card>
                     </v-timeline-item>
                 </v-timeline>
@@ -32,21 +32,24 @@
     data: () => ({
       items: [
         {
-          title: 'qualquer',
+          title: 'Como nasceu o Instituto Vira-Latas:',
+          sobreaong: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
           img: 'img/ongs/viralatas/1.png',
           color: 'red lighten-2',
           icon: 'mdi-dog'
         },
         {
-          title: 'outronome',
+          title: 'O abrigo:',
           color: 'purple darken-1',
-          icon: 'mdi-book-variant',
+          icon: 'mdi-home-circle',
         },
         {
+          title: 'Quantidade de pets abrigados:',
           color: 'green lighten-1',
-          icon: 'mdi-airballoon',
+          icon: 'mdi-dog-side',
         },
         {
+          title: 'Maiores dificuldades para manter o abrigo:',
           color: 'indigo',
           icon: 'mdi-buffer',
         },
