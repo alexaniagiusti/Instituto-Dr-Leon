@@ -4,7 +4,7 @@
 <p style="padding: 10px;height: 50px; background-color: #eae9fb" class="hidden-sm-and-down font-weight-light headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
 	<v-container style="background-color: #fff">
 			<v-row>
-					<v-col cols="12" md="3" sm="6" xs="12">
+					<v-col cols="12" md="3" sm="6" xs="12" class="pa-2">
 						<v-card
 							hover
 							color="pink lighten-5"
@@ -24,7 +24,8 @@
 						></v-img>
 
 						<v-card-text>
-							<p style="text-align: justify" class="black--text"> A gateiros tucujus é o 1° grupo de proteção aos gatos do Amapá, atualmente a ONG não possui abrigo e possui uma divida de R$ 3.055,80 em clínicas veterinárias.</p>
+							<p style="text-align: justify" class="black--text"> A gateiros tucujus é o 1° grupo de proteção aos gatos do Amapá, atualmente a ONG não possui abrigo e conta com doações para suprir as necessidades dos animais abrigados.</p>
+							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 3.055,80</p>
 						</v-card-text>
 						<v-progress-linear
 								color="light-blue"
@@ -59,7 +60,7 @@
 						</v-card-actions>
 					</v-card>
 				</v-col>
-				<v-col cols="12" md="3" sm="6" xs="12">
+				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
 					<v-card
 							color="lime lighten-4"
 							hover
@@ -79,7 +80,9 @@
 						></v-img>
 
 						<v-card-text>
-							<p style="text-align: justify" class="black--text">a ONG Salvação resgata animais nas cidades de Santana e Macapá, possui mais de 100 animais entre cães e gatos. Sua dívida em clínicas veterinárias é de R$ 8.000</p>
+							<p style="text-align: justify" class="black--text">a ONG Salvação resgata animais nas cidades de Santana e Macapá, possui mais de 100 animais entre cães e gatos e necessita de doações para continuar salvando vidas. </p>
+							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 8.000</p>
+
 						</v-card-text>
 						<v-progress-linear
 								color="light-blue"
@@ -112,7 +115,7 @@
 						</v-card-actions>
 				</v-card>
 				</v-col>
-				<v-col cols="12" md="3" sm="6" xs="12">
+				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
 					<v-card
 							hover
 							color="light-green lighten-4"
@@ -132,7 +135,9 @@
 						></v-img>
 
 						<v-card-text>
-							<p style="text-align: justify" class="black--text"> A gateiros tucujus é o 1° grupo de proteção aos gatos do Amapá, atualmente a ONG não possui abrigo e possui uma divida de R$ 3.055,80 em clínicas veterinárias.</p>
+							<p style="text-align: justify" class="black--text">O instituto possui 54 animais cadastrados e vacinados, possuindo 10 deficientes que não andam e 4 idosos, local fixo com 20 animais e o restante em um novo abrigo.</p>
+							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 5.000</p>
+
 						</v-card-text>
 						<v-progress-linear
 								color="light-blue"
@@ -168,7 +173,7 @@
 <!-- Final da Coluna que exibe a Ong Vira-latas -->
 
 <!-- Inicio da Coluna que exibe a Ong Anjos Protetores -->
-				<v-col cols="12" md="3" sm="6" xs="12">
+				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
 					<v-card
 							hover
 							color="cyan lighten-4"
@@ -183,12 +188,14 @@
 						</v-list-item>
 
 						<v-img
-							src="img/about/gateiros1.jpg"
+							src="img/about/anjosprotetores1.jpg"
 							height="194"
 						></v-img>
 
 						<v-card-text>
-							<p style="text-align: justify" class="black--text"	> A gateiros tucujus é o 1° grupo de proteção aos gatos do Amapá, atualmente a ONG não possui abrigo e possui uma divida de R$ 3.055,80 em clínicas veterinárias.</p>
+							<p style="text-align: justify" class="black--text">Primeira Ong Mapaense a conquistar o título de entidade pública, salvando vidas durante 5 anos e concedendo a cães e gatos a oportunidade de possuir uma vida melhor. </p>
+							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 8.000</p>
+
 						</v-card-text>
 						<v-progress-linear
 								color="light-blue"

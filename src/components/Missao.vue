@@ -31,9 +31,9 @@
     </v-row>
   </v-container>
 
-  <!-- Container de exibição para desktop -->
 </div>
 
+  <!-- Container de exibição para desktop -->
   <div id="background-missao" class="hidden-sm-and-down">
       <p style="padding: 10px;height: 50px; background-color: #eae9fb" class="hidden-sm-and-down font-weight-light headline black--text text-center">Missão do Instituto Dr. Leon</p>
     <div>
@@ -65,6 +65,7 @@
                   <p class="mt-4 black--text">
                   <v-icon>mdi-paw</v-icon> Ong Anjos Protetores: Dívida de 8 mil reais.
                   </p>
+                  <p class="mt-4"><a @click="scrollar(1450)"> <v-icon>mdi-arrow-down</v-icon> Saiba mais sobre nossos Parceiros</a></p>
                   <v-btn class="mt-4" color="blue" block><span class="white--text">Contribua</span><v-icon color="white" class="ma-2">mdi-charity</v-icon> </v-btn>
                 </div>
               </div>
@@ -77,6 +78,23 @@
 </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      
+    }
+  },
+  methods: {
+        scrollar(to) {
+        window.scrollTo({
+            top: to,
+            behavior: 'smooth'
+        })
+    }
+  }
+}
+</script>>
 
 <style scoped>
 #background-missao {
