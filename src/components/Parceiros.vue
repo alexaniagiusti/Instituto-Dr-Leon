@@ -1,11 +1,10 @@
 <template>
-	<div>
-		<div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
-			<p style="padding: 10px;height: 50px; background-color: #eae9fb" class="headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
-		</div>
-		<v-container class="mt-5">
+<div>
+<p style="border-top: 2px solid #ccc; padding: 10px;height: 130px;background-color: #fff" class="hidden-sm-and-up font-weight-light headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
+<p style="padding: 10px;height: 50px; background-color: #eae9fb" class="hidden-sm-and-down font-weight-light headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
+	<v-container style="background-color: #fff">
 			<v-row>
-					<v-col cols="12" md="3" sm="6" xs="12" class="all-services">
+					<v-col cols="12" md="3" sm="6" xs="12">
 						<v-card
 							hover
 							color="pink lighten-5"
@@ -60,7 +59,7 @@
 						</v-card-actions>
 					</v-card>
 				</v-col>
-				<v-col cols="12" md="3" sm="6" xs="12" class="all-services">
+				<v-col cols="12" md="3" sm="6" xs="12">
 					<v-card
 							color="lime lighten-4"
 							hover
@@ -113,7 +112,7 @@
 						</v-card-actions>
 				</v-card>
 				</v-col>
-				<v-col cols="12" md="3" sm="6" xs="12" class="all-services">
+				<v-col cols="12" md="3" sm="6" xs="12">
 					<v-card
 							hover
 							color="light-green lighten-4"
@@ -169,7 +168,7 @@
 <!-- Final da Coluna que exibe a Ong Vira-latas -->
 
 <!-- Inicio da Coluna que exibe a Ong Anjos Protetores -->
-				<v-col cols="12" md="3" sm="6" xs="12" class="all-services">
+				<v-col cols="12" md="3" sm="6" xs="12">
 					<v-card
 							hover
 							color="cyan lighten-4"
