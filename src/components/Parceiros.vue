@@ -4,7 +4,7 @@
 <p style="padding: 10px;height: 50px; background-color: #eae9fb" class="hidden-sm-and-down font-weight-light headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
 	<v-container style="background-color: #fff">
 			<v-row>
-					<v-col cols="12" md="3" sm="6" xs="12" class="pa-2">
+					<v-col v-for="item in ongs" :key="item._id" cols="12" md="3" sm="6" xs="12" class="pa-2">
 						<v-card
 							hover
 							color="pink lighten-5"
@@ -14,7 +14,7 @@
 						<v-list-item>
 							<v-list-item-avatar> <v-img src="img/services/w1.png"></v-img> </v-list-item-avatar>
 							<v-list-item-content>
-								<v-list-item-title class="title">Gateiros Tucujus</v-list-item-title>
+								<v-list-item-title class="title">{{ item.nome }}</v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
 
@@ -25,7 +25,7 @@
 
 						<v-card-text>
 							<p style="text-align: justify" class="black--text"> A gateiros tucujus é o 1° grupo de proteção aos gatos do Amapá, atualmente a ONG não possui abrigo e conta com doações para suprir as necessidades dos animais abrigados.</p>
-							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 3.055,80</p>
+							<p class="subtitle-1 black--text font-weight-bold">Objetivo: {{ item.objetivo }}</p>
 						</v-card-text>
 						<v-progress-linear
 								color="light-blue"
@@ -34,7 +34,7 @@
 								reactive
 								striped
 							>
-							<strong>{{ Math.ceil(gateirostucujus) }}%</strong>
+							<strong>Arrecadado {{ Math.ceil(gateirostucujus) }}%</strong>
 						</v-progress-linear>
 
 						<v-card-actions>
@@ -60,174 +60,6 @@
 						</v-card-actions>
 					</v-card>
 				</v-col>
-				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
-					<v-card
-							color="lime lighten-4"
-							hover
-							max-width="344"
-							class="mx-auto"
-						>
-						<v-list-item>
-							<v-list-item-avatar> <v-img src="img/services/w2.png"></v-img> </v-list-item-avatar>
-							<v-list-item-content>
-								<v-list-item-title class="title">Ong Salvação</v-list-item-title>
-							</v-list-item-content>
-						</v-list-item>
-
-						<v-img
-							src="img/about/salvacao1.jpg"
-							height="194"
-						></v-img>
-
-						<v-card-text>
-							<p style="text-align: justify" class="black--text">a ONG Salvação resgata animais nas cidades de Santana e Macapá, possui mais de 100 animais entre cães e gatos e necessita de doações para continuar salvando vidas. </p>
-							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 8.000</p>
-
-						</v-card-text>
-						<v-progress-linear
-								color="light-blue"
-								v-model="salvacao"
-								height="25"
-								reactive
-								striped
-							>
-							<strong>{{ Math.ceil(gateirostucujus) }}%</strong>
-						</v-progress-linear>
-
-						<v-card-actions>
-							<v-btn
-								text
-								color="deep-purple accent-4"
-							>
-								Contribua
-							<v-icon>mdi-charity</v-icon>
-
-							</v-btn>
-							<v-btn
-								@click="$router.push('/ong/salvacao')"
-								text
-								color="deep-purple accent-4"
-							>
-								Saiba mais
-								<v-icon>mdi-cursor-default-click</v-icon>
-							</v-btn>
-							<v-spacer></v-spacer>
-						</v-card-actions>
-				</v-card>
-				</v-col>
-				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
-					<v-card
-							hover
-							color="light-green lighten-4"
-							max-width="344"
-							class="mx-auto"
-						>
-						<v-list-item>
-							<v-list-item-avatar> <v-img src="img/services/w3.png"></v-img> </v-list-item-avatar>
-							<v-list-item-content>
-								<v-list-item-title class="title">Instituto Vira-Latas</v-list-item-title>
-							</v-list-item-content>
-						</v-list-item>
-
-						<v-img
-							src="img/about/viralatas1.png"
-							height="194"
-						></v-img>
-
-						<v-card-text>
-							<p style="text-align: justify" class="black--text">O instituto possui 54 animais cadastrados e vacinados, possuindo 10 deficientes que não andam e 4 idosos, local fixo com 20 animais e o restante em um novo abrigo.</p>
-							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 5.000</p>
-
-						</v-card-text>
-						<v-progress-linear
-								color="light-blue"
-								v-model="salvacao"
-								height="25"
-								reactive
-								striped
-							>
-							<strong>{{ Math.ceil(viralatas) }}%</strong>
-						</v-progress-linear>
-
-						<v-card-actions>
-							<v-btn
-								text
-								color="deep-purple accent-4"
-							> 
-								Contribua
-							<v-icon>mdi-charity</v-icon>
-
-							</v-btn>
-							<v-btn
-								@click="$router.push('/ong/vira-latas')"
-								text
-								color="deep-purple accent-4"
-							>
-								Saiba mais
-								<v-icon>mdi-cursor-default-click</v-icon>
-							</v-btn>
-							<v-spacer></v-spacer>
-						</v-card-actions>
-				</v-card>
-				</v-col>
-<!-- Final da Coluna que exibe a Ong Vira-latas -->
-
-<!-- Inicio da Coluna que exibe a Ong Anjos Protetores -->
-				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
-					<v-card0000000000
-							hover
-							color="cyan lighten-4"
-							max-width="344"
-							class="mx-auto"
-						>
-						<v-list-item>
-							<v-list-item-avatar> <v-img src="img/services/w4.png"></v-img> </v-list-item-avatar>
-							<v-list-item-content>
-								<v-list-item-title class="title">Anjos Protetores</v-list-item-title>
-							</v-list-item-content>
-						</v-list-item>
-
-						<v-img
-							src="img/about/anjosprotetores1.jpg"
-							height="194"
-						></v-img>
-
-						<v-card-text>
-							<p style="text-align: justify" class="black--text">Primeira Ong Mapaense a conquistar o título de entidade pública, salvando vidas durante 5 anos e concedendo a cães e gatos a oportunidade de possuir uma vida melhor. </p>
-							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 8.000</p>
-
-						</v-card-text>
-						<v-progress-linear
-								color="light-blue"
-								v-model="salvacao"
-								height="25"
-								reactive
-								striped
-							>
-							<strong>{{ Math.ceil(anjosprotetores) }}%</strong>
-						</v-progress-linear>
-
-						<v-card-actions>
-							<v-btn
-								text
-								color="deep-purple accent-4"
-							>
-								Contribua
-							<v-icon>mdi-charity</v-icon>
-
-							</v-btn>
-							<v-btn
-								@click="$router.push('/ong/anjos-protetores')"
-								text
-								color="deep-purple accent-4"
-							>
-								Saiba mais
-								<v-icon>mdi-cursor-default-click</v-icon>
-							</v-btn>
-							<v-spacer></v-spacer>
-						</v-card-actions>
-				</v-card>
-				</v-col>
 			</v-row>
 <!-- Final da Coluna que exibe a Ong Anjos Protetores -->
 		</v-container>
@@ -237,10 +69,23 @@
 <script>
   export default {
     data: () => ({
+		ongs: [],
       gateirostucujus: 4,
 			anjosprotetores: 5,
 			viralatas: 0,
 			salvacao: 0,
-    }),
+	}),
+	methods: {
+		getOngs () {
+			this.$http.get('/ong')
+				.then((res) => {
+					this.ongs = res.data
+				})
+				.catch()
+		}
+	},
+	created () {
+		this.getOngs()
+	}
   }
 </script>
