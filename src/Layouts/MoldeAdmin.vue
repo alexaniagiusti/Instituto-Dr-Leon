@@ -1,25 +1,25 @@
 <template>
-  <v-container class="mt-0 pt-0" fluid>
+    <v-container style="background: rgba(0,0,0,0) " class="mt-0 pt-0" fluid>
     <v-row>
       <v-col cols="12" md="12">
-        
-        <v-app-bar elevation="1" style="justify-content: center; align-items: center; border-radius: 6px; margin-bottom: 6px" >
+        <v-app-bar elevation="3" style="justify-content: center; align-items: center; border-radius: 6px; margin-bottom: 6px" >
             <v-btn @click="$store.dispatch('drawer', true)" icon>
               <v-icon>mdi-menu</v-icon>
             </v-btn>
 
-            <v-toolbar-title>{{ title }}</v-toolbar-title>
+            <v-toolbar-title class="fonteTitulo" >{{ title }}</v-toolbar-title>
 
             <v-spacer></v-spacer>
 
             <div class="hidden-sm-and-down centraliza-tudo">
-              <v-btn color="red" class="white--text" v-for="item in menu" @click="() => item.action()" :key="item.nome" >{{ item.nome }}</v-btn>
+              <v-btn color="green accent-3" text class="mr-2 white--text" v-for="item in menu" @click="() => item.action()" :key="item.nome" >{{ item.nome }}</v-btn>
             </div>
 
             <v-menu
               class="hidden-lg-and-up"
               left
               bottom
+              v-if="menu !== undefined"
             >
               <template v-slot:activator="{ on }">
                 <v-btn class="hidden-lg-and-up" icon v-on="on">
@@ -28,20 +28,18 @@
               </template>
 
               <v-list>
-                <v-list-item v-for="item in menu" :key="item.nome" @click="() => item.action()"
-                >
+                <v-list-item v-for="item in menu" :key="item.nome" @click="() => item.action()">
                   <v-list-item-title>{{ item.nome }}</v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-menu>
           </v-app-bar>
-
         
-        <v-card>
+        <v-card elevation="3">
           <v-card-title>
             <v-row>
               <v-col cols="12" xs="12" md="12">
-                <v-btn text small :class="item.color" v-for="item in options" @click="item.action()" :key="item.nome">
+                <v-btn class="mr-2" hover style="background: linear-gradient(to right, #56ab2f, #56ab2f);" v-for="item in options" @click="item.action()" :key="item.nome">
                     <v-icon color="white" class="mr-2" >{{ item.icon }}</v-icon>
                     <span class="white--text text-capitalize" >{{ item.nome }}</span> 
                 </v-btn>                
@@ -63,6 +61,7 @@
 export default {
   props: ['title', 'menu', 'options']
 }
+
 </script>
 
 <style>

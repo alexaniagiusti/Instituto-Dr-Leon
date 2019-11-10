@@ -174,7 +174,7 @@
 
 <!-- Inicio da Coluna que exibe a Ong Anjos Protetores -->
 				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
-					<v-card
+					<v-card0000000000
 							hover
 							color="cyan lighten-4"
 							max-width="344"
@@ -237,8 +237,8 @@
 <script>
   export default {
     data: () => ({
-      gateirostucujus: 0,
-			anjosprotetores: 0,
+      gateirostucujus: 4,
+			anjosprotetores: 5,
 			viralatas: 0,
 			salvacao: 0,
     }),
