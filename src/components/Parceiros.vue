@@ -174,7 +174,7 @@
 
 <!-- Inicio da Coluna que exibe a Ong Anjos Protetores -->
 				<v-col cols="12" md="3" sm="6" xs="12"  class="pa-2">
-					<v-card0000000000
+					<v-card
 							hover
 							color="cyan lighten-4"
 							max-width="344"

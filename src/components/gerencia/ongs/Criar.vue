@@ -1,12 +1,33 @@
 <template>
   <Molde title="Cadastrar nova ong" :options="options" :menu="menu" >
     <div>
-        <div class="semQuebra expande-horizontal" >
+        <div class="pa-0 semQuebra expande-horizontal" >
             <v-flex class="pa-2" xs6>
                 <v-text-field outlined label="Nome" v-model="ong.nome"></v-text-field>
             </v-flex>
             <v-flex  class="pa-2" xs6>
                 <v-text-field outlined label="Objetivo em R$ a ser alcançado" prefix="R$" v-model="ong.objetivo"></v-text-field>
+            </v-flex>
+        </div>
+        
+        <div class="pa-0 semQuebra expande-horizontal" >
+            <v-flex  class="pa-2" xs6>
+                <v-text-field outlined label="Avatar img" v-model="ong.avatar"></v-text-field>
+            </v-flex>
+            <v-flex class="pa-2" xs6>
+                <v-text-field outlined label="Img Capa" prefix="link" v-model="ong.imgcapa"></v-text-field>
+            </v-flex>
+        </div>
+        
+        <div class="pa-0 semQuebra expande-horizontal" >
+            <v-flex  class="pa-2" xs6>
+                <v-text-field outlined label="Cor da ong" v-model="ong.cor"></v-text-field>
+            </v-flex>
+        </div>
+        
+        <div class="pa-0 semQuebra expande-horizontal" >
+            <v-flex class="pa-2" xs12>
+                <v-textarea outlined label="Texto da Capa" v-model="ong.textocapa"></v-textarea>
             </v-flex>
         </div>
     </div>
@@ -31,8 +52,8 @@ export default {
 					action: () => this.$router.go(-1)    
 				},
 				{
-					icon: 'mdi-save',
-					nome: 'Salvar Alterações',
+					icon: 'mdi-content-save',
+					nome: 'Criar',
 					action: () => this.saveOng()  
 				},
 			],
@@ -42,7 +63,7 @@ export default {
 		}
 	},
 	methods: {
-		saveUser() {
+		saveOng() {
 			this.$store.dispatch('charging', true)
 
 			this.$http.post(`/ong`, this.ong)
@@ -56,3 +77,14 @@ export default {
 	}
 }
 </script>
+
+<style>
+    .semQuebra {
+        display: flex;
+        flex-wrap: nowrap
+    }
+
+    .expande-horizontal {
+        width: 100%;
+    }
+</style>
