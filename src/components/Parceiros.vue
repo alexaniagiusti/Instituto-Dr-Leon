@@ -5,7 +5,7 @@
 			<h2 class="title2">Ongs Parceiras!</h2>
 		</div>
 			<v-row>
-					<v-col cols="12" md="3" sm="6" xs="12" class="pa-2">
+					<v-col v-for="item in ongs" :key="item._id" cols="12" md="3" sm="6" xs="12" class="pa-2">
 						<v-card
 							hover
 							color="pink lighten-5"
@@ -15,9 +15,12 @@
 						<v-list-item>
 							<v-list-item-avatar> <v-img src="img/services/w1.png"></v-img> </v-list-item-avatar>
 							<v-list-item-content>
+
 								<v-list-item-title class="title">
 									<h5 class="mt-2" >Gateiros Tucujus</h5>
 								</v-list-item-title>
+
+								<v-list-item-title class="title">{{ item.nome }}</v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
 
@@ -28,7 +31,7 @@
 
 						<v-card-text>
 							<p style="text-align: justify" class="black--text"> A gateiros tucujus é o 1° grupo de proteção aos gatos do Amapá, atualmente a ONG não possui abrigo e conta com doações para suprir as necessidades dos animais abrigados.</p>
-							<p class="subtitle-1 black--text font-weight-bold">Objetivo: R$ 3.055,80</p>
+							<p class="subtitle-1 black--text font-weight-bold">Objetivo: {{ item.objetivo }}</p>
 						</v-card-text>
 						<v-progress-linear
 								color="light-blue"
@@ -37,7 +40,7 @@
 								reactive
 								striped
 							>
-							<strong>{{ Math.ceil(gateirostucujus) }}%</strong>
+							<strong>Arrecadado {{ Math.ceil(gateirostucujus) }}%</strong>
 						</v-progress-linear>
 
 						<v-card-actions>
@@ -238,7 +241,6 @@
 				</v-card>
 				</v-col>
 			</v-row>
-<!-- Final da Coluna que exibe a Ong Anjos Protetores -->
 		</v-container>
 </div>
 </template>
@@ -246,10 +248,23 @@
 <script>
   export default {
     data: () => ({
+		ongs: [],
       gateirostucujus: 4,
 			anjosprotetores: 5,
 			viralatas: 0,
 			salvacao: 0,
-    }),
+	}),
+	methods: {
+		getOngs () {
+			this.$http.get('/ong')
+				.then((res) => {
+					this.ongs = res.data
+				})
+				.catch()
+		}
+	},
+	created () {
+		this.getOngs()
+	}
   }
 </script>
