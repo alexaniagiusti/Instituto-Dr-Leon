@@ -1,10 +1,10 @@
 <template>
     <Ong>
-        <v-container fluid style="background-color: #eae9fb">
-          {{ ong }}
+        <v-container fluid style="background-image: url(img/background/OPSEG70.jpg); background-repeat: repeat">
             <v-container class="mt-0 pt-0" >
                 <v-row class="mt-0 pt-0">
                     <v-col class="mt-0 pt-0" cols="12" md="12" xs="12">
+                        <h2 style="color: #fff; text-align:center;" class="title2 pa-2">{{ong.nome}}</h2>
                         <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
                             <v-timeline-item
                             v-for="(item, i) in ong.galeria"
@@ -14,14 +14,19 @@
                             fill-dot
                             >
                             <v-card
-                                :color="item.color"
+                                :color="item.cor"
                                 dark
                             >
-                            <v-card-title class="title pa-1">{{item.title}}</v-card-title>
-                            <p style="text-align:justify" class="sobreaong white--text pa-4">{{item.sobreaong}}</p>
+                            <v-card-title class="title pa-1">{{item.titulo}}</v-card-title>
+                            <div style="display:flex; width: 100%; justify-content:center">
+                                <img :src="item.foto" alt="" width="300">
+                            </div>
+                            <p style="text-align:justify" class="sobreaong white--text pa-4">{{item.texto}}</p>
                             </v-card>
                             </v-timeline-item>
-                        </v-timeline>
+                        </v-timeline> 
+                        <v-btn class="mt-4" color="blue" @click="contribua=true" block><span class="white--text">Contribua</span><v-icon color="white" class="ma-2">mdi-charity</v-icon> </v-btn>
+
                     </v-col>
                 </v-row>
             </v-container>
