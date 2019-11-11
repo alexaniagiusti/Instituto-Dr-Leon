@@ -29,10 +29,10 @@
                                             <li><a @click="scrollar(770)">Missão</a></li>
                                             <li><a @click="scrollar(1420)">Parceiros</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="index-2.html">Gateiros Tucujus</a></li>
-                                                    <li><a href="index-3.html">Salvação</a></li>
-                                                    <li><a href="index-3.html">Vira-Latas</a></li>
-                                                    <li><a href="index-3.html">Anjos Protetores</a></li>
+                                                    <li><a @click="$router.push('/ong/5dc852c4e105bf00170739a2')">Gateiros Tucujus</a></li>
+                                                    <li><a @click="$router.push('/ong/5dc85332e105bf00170739a3')">Salvação</a></li>
+                                                    <li><a @click="$router.push('/ong/5dc85436e105bf00170739a4')">Vira-Latas</a></li>
+                                                    <li><a @click="$router.push('/ong/5dc854e3e105bf00170739a5')">Anjos Protetores</a></li>
                                                 </ul>
                                             </li>
                                             <li><a @click="scrollar(2000)">Redes Sociais</a></li>

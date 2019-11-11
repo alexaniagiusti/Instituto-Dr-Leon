@@ -134,7 +134,7 @@
                       mdi-star
                     </v-icon>
                     <span class="font-italic text-justify grey--text" >
-                      Contribuindo com esta quantia, você terá sua foto no mural do amigo dos animais no site do Dr.Leon.
+                      Contribuindo com esta quantia, você terá sua foto no mural de amigo dos animais no site do Dr.Leon.
                     </span>
                   </div>
                 </div>
@@ -200,8 +200,6 @@
         </v-row>
       </v-container>
     </div>
-  </div>
-</div>
 </template>
 
 <script>

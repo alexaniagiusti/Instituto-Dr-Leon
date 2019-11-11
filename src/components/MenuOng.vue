@@ -1,5 +1,5 @@
 <template>
-<div class="menu-ong">
+<div class="menu-ong" >
     <header class="header-one">
         <!-- header-area start -->
         <div id="sticker" class="header-area hidden-xs">
@@ -10,7 +10,7 @@
                         <div class="logo">
                             <!-- Brand -->
                             <a class="navbar-brand page-scroll black-logo" @click="goToHome">
-                                <img src="img/logo/logo2.png">
+                                    <img src="img/logo/logo2.png">
                             </a>
                         </div>
                         <!-- logo end -->
@@ -34,7 +34,7 @@
                                                 <li><a href="index-3.html">Anjos Protetores</a></li>
                                             </ul>
                                         </li>
-                                        <li><a class="pagess" @click="goToHome()">Rodapé</a></li>
+                                        <li><a class="pagess" @click="goToHome()">Redes Sociais</a></li>
                                         <li><a class="pagess" @click="goToHome()">Amigos do Instituto</a></li>
                                     </ul>
                                 </div>
@@ -83,7 +83,4 @@ export default {
     z-index: 9999999;
 }
 
-.header-area{
-	background-image: url(../../public/img/background/bg1.png);
-}
 </style>
