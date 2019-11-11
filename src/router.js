@@ -47,12 +47,9 @@ export default new Router({
           component: CriarOng,
         },
         {
-          path: '/gerencia/criar-ong',
-          component: CriarOng,
-        },
-        {
-          path: '/gerencia/visualizar-ong/:id',
+          path: '/gerencia/editar-ong/:id',
           component: VisualizarOng,
+          props: true
         },
         {
           path: '/gerencia/pagamento-listar',

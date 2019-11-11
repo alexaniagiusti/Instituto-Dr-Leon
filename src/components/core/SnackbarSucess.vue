@@ -6,7 +6,7 @@
         <v-flex xs12>
           <div style="display: flex; justify-content: center; width: 100%">
             <v-avatar class="elevation-1 bounceInUp snack" color="green">
-              <v-icon class="fadeIn" size="40" color="white">check</v-icon>
+              <v-icon class="fadeIn" size="40" color="white">mdi-check</v-icon>
             </v-avatar>
           </div>
         </v-flex>

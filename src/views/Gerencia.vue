@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer class="elevation-3" v-model="drawer" app dark clipped width="250">
+    <v-navigation-drawer class="elevation-3" v-model="drawer" app clipped width="250">
       <v-card class="elevation-0" style="border-radius: 0px;" color="white">
         <div style="display: flex; width: 100%; align-items: center; flex-direction: column">
           <div style="display: flex">
@@ -20,19 +20,27 @@
 
         <v-list-item active-class="menuAtivo" to="/gerencia/ong-listar">
           <v-avatar>
-            <v-icon color="white">mdi-dog-side</v-icon>
+            <v-icon color="blue accent-3">mdi-dog-side</v-icon>
           </v-avatar>
           <v-list-item-content>
-            <v-list-item-title class="white--text">Ongs</v-list-item-title>
+            <v-list-item-title class="grey--text">Ongs</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         
         <v-list-item active-class="menuAtivo" to="/gerencia/pagamento-listar">
           <v-avatar>
-            <v-icon color="white">mdi-hand-heart</v-icon>
+            <v-icon color="red accent-3">mdi-hand-heart</v-icon>
           </v-avatar>
           <v-list-item-content>
-            <v-list-item-title class="white--text">Pagamentos</v-list-item-title>
+            <v-list-item-title class="grey--text">Pagamentos</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        
+        <v-list-item active-class="menuAtivo" to="/gerencia/pagamento-listar">
+          <v-avatar>
++          </v-avatar>
+          <v-list-item-content>
+            <v-list-item-title class="grey--text">Sair</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
