@@ -1,8 +1,9 @@
 <template>
-<div>
-<p style="border-top: 2px solid #ccc; padding: 10px;height: 130px;background-color: #fff" class="hidden-sm-and-up font-weight-light headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
-<p style="padding: 10px;height: 50px; background-color: #eae9fb" class="hidden-sm-and-down font-weight-light headline black--text text-center ma-0">Conheça as Ongs que são parceiras do Instituto Dr. Leon e abrace uma causa!</p>
+<div style="background-color: #fff">
 	<v-container style="background-color: #fff">
+		<div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
+			<h2 class="title2">Ongs Parceiras!</h2>
+		</div>
 			<v-row>
 					<v-col cols="12" md="3" sm="6" xs="12" class="pa-2">
 						<v-card
@@ -14,7 +15,9 @@
 						<v-list-item>
 							<v-list-item-avatar> <v-img src="img/services/w1.png"></v-img> </v-list-item-avatar>
 							<v-list-item-content>
-								<v-list-item-title class="title">Gateiros Tucujus</v-list-item-title>
+								<v-list-item-title class="title">
+									<h5 class="mt-2" >Gateiros Tucujus</h5>
+								</v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
 
@@ -70,7 +73,9 @@
 						<v-list-item>
 							<v-list-item-avatar> <v-img src="img/services/w2.png"></v-img> </v-list-item-avatar>
 							<v-list-item-content>
-								<v-list-item-title class="title">Ong Salvação</v-list-item-title>
+								<v-list-item-title class="title">
+									<h5 class="mt-2" >Ong Salvação</h5>
+								</v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
 
@@ -125,7 +130,9 @@
 						<v-list-item>
 							<v-list-item-avatar> <v-img src="img/services/w3.png"></v-img> </v-list-item-avatar>
 							<v-list-item-content>
-								<v-list-item-title class="title">Instituto Vira-Latas</v-list-item-title>
+								<v-list-item-title class="title">
+									<h5 class="mt-2" >Instituto Vira-Latas</h5>
+								</v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
 
@@ -183,7 +190,9 @@
 						<v-list-item>
 							<v-list-item-avatar> <v-img src="img/services/w4.png"></v-img> </v-list-item-avatar>
 							<v-list-item-content>
-								<v-list-item-title class="title">Anjos Protetores</v-list-item-title>
+								<v-list-item-title class="title">
+									<h5 class="mt-2" >Anjos Protetores</h5>
+								</v-list-item-title>
 							</v-list-item-content>
 						</v-list-item>
 
