@@ -3,7 +3,7 @@
 <div class="missao-mobile hidden-sm-and-up" style="background: #fff">
   <v-container class="" style="background: #fff">
     <v-row>
-      <v-col cols="12">
+      <v-col class="hidden-sm-and-up" cols="12">
         <div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
           <h2 class="title2">Missão</h2>
         </div>
@@ -167,7 +167,7 @@
           
           <img  src="img/about/ab.png" alt="">
           </v-col>
-          <v-col cols="12" md="6" sm="6" xs="12">
+          <v-col class="hidden-sm-and-down"cols="12" md="6" sm="6" xs="12">
             <div class="support-all">
             <!-- Start services -->
               <div class="support-services wow fadeInUp" data-wow-delay="0.3s">
