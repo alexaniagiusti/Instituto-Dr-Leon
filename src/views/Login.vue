@@ -28,13 +28,15 @@
                   <v-text-field
                     label="Login"
                     name="login"
+                    v-model="usuario.email"
                     prepend-icon="mdi-account"
                     type="text"
                   />
 
                   <v-text-field
                     id="password"
-                    label="Password"
+                    label="Senha"
+                    v-model="usuario.senha"
                     name="password"
                     prepend-icon="mdi-shield-lock"
                     type="password"
@@ -43,7 +45,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer />
-                <v-btn @click="goToGerencia" color="primary">Login</v-btn>
+                <v-btn @click="login" color="primary">Login</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -58,10 +60,29 @@
     props: {
       source: String,
     },
-     methods: {
-        goToGerencia() {
-        this.$router.push('/gerencia')
-        },
+    data() {
+      return {
+        usuario: {
+          email: '',
+          senha: ''
+        }
+      }
+    },
+    methods: {
+      login() {
+        this.$store.dispatch('charging', true)
+
+        this.$http.post('/session', this.usuario)
+          .then(res => {
+            sessionStorage.usuario = JSON.stringify(res.data)
+            this.$store.dispatch('charging', false)
+            this.$router.push("/gerencia/ong-listar")
+          })
+          .catch(err => {
+            this.$store.dispatch('charging', false)
+            this.$store.dispatch("snackbar_error", `${err.response.data.message}`)
+          })
+      }
     }
   }
 </script>

@@ -11,7 +11,7 @@
         <v-flex xs12>
           <div style="display: flex; justify-content: center; width: 100%">
             <v-avatar style="position: relative" class="elevation-1 bounceInUp snack" color="red">
-              <v-icon class=" " size="40" color="white">close</v-icon>
+              <v-icon class=" " size="40" color="white">mdi-alarm-light</v-icon>
             </v-avatar>
           </div>
         </v-flex>

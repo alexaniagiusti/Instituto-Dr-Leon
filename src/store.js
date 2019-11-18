@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    usuario: !!sessionStorage.usuario ? JSON.parse(sessionStorage.usuario) : null,
     snackbar_error: {
       mostrar: false,
       mensagem: ""
@@ -126,6 +127,12 @@ export default new Vuex.Store({
     },
     drawer(state) {
       return state.drawer
+    },
+    usuario(state) {
+      return state.usuario
+    },
+    token(state) {
+      return state.usuario.token
     }
   }
 })

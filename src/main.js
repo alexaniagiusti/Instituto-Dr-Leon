@@ -12,7 +12,11 @@ import MoldeAdmin from './Layouts/MoldeAdmin.vue'
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios.create({
-  baseURL: 'https://leon-backend.herokuapp.com'
+  //baseURL: 'https://leon-backend.herokuapp.com'
+  baseURL: 'http://localhost:3000',
+  headers: {
+    Authorization: `Bearer ${store.getters.token}`
+  }
 })
 
 Vue.component('Ong', Ong)

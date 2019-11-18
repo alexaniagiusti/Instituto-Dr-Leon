@@ -36,7 +36,7 @@
           </v-list-item-content>
         </v-list-item>
         
-        <v-list-item active-class="menuAtivo" to="/gerencia/pagamento-listar">
+        <v-list-item active-class="menuAtivo" @click="sair">
           <v-avatar>
 +          </v-avatar>
           <v-list-item-content>
@@ -62,6 +62,12 @@ export default {
   computed: {
     drawer() {
       return this.$store.getters.drawer
+    }
+  },
+  methods: {
+    sair() {
+      sessionStorage.clear()
+      this.$router.push('/')
     }
   }
 };
